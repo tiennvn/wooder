@@ -1,4 +1,5 @@
 body{
+    height:5000px
 }
 
 .container-fluid {
@@ -20,6 +21,8 @@ header {
     position: sticky;
     top: 0;
     opacity: 0.7;
+    z-index: 10;
+
 }
 
 header .container-fluid {
@@ -59,6 +62,9 @@ main .products .container{
 
 main .products .container .items{
     display: flex;
+    margin-bottom: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 main .products .container .items:nth-child(even){
@@ -69,6 +75,7 @@ main .products .container .items:nth-child(even){
 main .products .container .items .items__description{
     width: 50%;
     text-align: center;
+    margin: auto;
 }
 
 main .products .container .items .items__img{
@@ -78,6 +85,10 @@ main .products .container .items .items__img{
 main .news{
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+main .news .container{
+
 }
 
 main .news .news__list{
@@ -99,16 +110,26 @@ main .news .news__list .news__item p{
     text-overflow: ellipsis;
 }
 
+main .about .container{
+    display: flex;
+    justify-content: space-between;
+    /* align-items:center; */
+}
+
+main .gallery{
+    background-color: #000;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    color: #fff;
+}
 main .gallery .container .gallery__grid{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-
 }
 
 main .gallery .container .gallery__grid-item{
-
+    height: 200px;
+    position: relative;
+    overflow: hidden;
 }
 
 main .gallery .container .gallery__grid .item1 {
@@ -123,6 +144,8 @@ main .gallery .container .gallery__grid .item2 {
 main .gallery .container .gallery__grid .item3 {
     grid-column: 2 / 3;
     grid-row: 1 / 3;
+    height: 400px;
+    width: 100%;
 }
 main .gallery .container .gallery__grid .item4 {
     grid-column: 3 / 4;
@@ -134,7 +157,50 @@ main .gallery .container .gallery__grid .item5 {
     grid-row: 2;
 }
 
-main .gallery .container .gallery__grid img{
+main .gallery .container .gallery__grid .gallery__grid-item img{
     width:100%;
-    max-width:600px;
+    height:100%;
+    object-fit:cover;
+    
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+
+    margin: 10px;
+    z-index: 1;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    height:60px;
+
+}
+footer .container .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* hidden item */
+
+.slider{
+    display: none;
+}
+
+/* .products{
+    display: none;
+} */
+
+.videos{
+    display: none;
+}
+
+/* .about{
+    display: none;
+} */
+.info{
+    display: none;
+
 }
