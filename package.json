@@ -1,0 +1,33 @@
+{
+  "name": "wooderproject",
+  "version": "1.0.0",
+  "description": "wooder project CFD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiennvn/wooder.git"
+  },
+  "keywords": [
+    "wooder"
+  ],
+  "author": "TienN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tiennvn/wooder/issues"
+  },
+  "homepage": "https://github.com/tiennvn/wooder#readme",
+  "dependencies": {
+    "grunt-contrib-uglify": "^5.0.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.3.0",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-cssmin": "^4.0.0",
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "load-grunt-tasks": "^5.1.0"
+  }
+}
