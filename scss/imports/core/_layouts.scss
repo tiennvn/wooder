@@ -85,7 +85,7 @@ body {
         overflow: hidden;
         @include visible;
         section{
-            padding: $section-padding 0;
+            padding: 0 0 $section-padding 0;
         }
     }
     @include lg {
