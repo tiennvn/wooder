@@ -17,10 +17,10 @@ body {
     max-width: $container-max-width;
     margin: auto;
     @include text($fz-text, $font-main, $lh-text, $text-cl, none);
-    background: $white-cl;
+    background: $main-bg-cl;
     scroll-behavior: smooth;
     position: relative;
-    @include customscroll();
+    @include customscroll(10px, #C7D6DF, #5C89A2);
     .container {
         width: 100%;
         padding-right: 15px;
@@ -79,10 +79,14 @@ body {
         }
     }
 
-    .mainwrapper {
+    .main-page {
         width: 100%;
         margin: auto;
+        overflow: hidden;
         @include visible;
+        section{
+            padding: $section-padding 0;
+        }
     }
     @include lg {
         // CSS responsive large desktop

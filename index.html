@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>Wooder Project</title>
-    <link rel="stylesheet" href="./dest/style.min.css">
+    <link rel="icon" href="favicon.ico">
+    <meta name="title" content="" />
+    <meta name="description" content="" />
+    <!-- meta facebook -->
+    <meta property="og:locale" content="vi" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Trang chủ" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="stylesheet" href="dest/style.min.css">
+    <link rel="stylesheet" href="dest/fonts.css">
 </head>
 <body>
     <header>
         <div class="container-fluid">
             <div class="logo">
                 <a href="#">
-                    <img src="./img/Logo.png" alt="Web site logo">
+                    <img src="img/Logo.png" alt="Web site logo">
                 </a>
             </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">PRODUCTS</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">GALLERY</a></li>
-                    <li><a href="#">NEWS</a></li>
-                </ul>
-            </div>
+            <ul class="menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">NEWS</a></li>
+            </ul>
             <div class="lang">
                 <div class="lang__default">
                     <span>VN</span>
@@ -37,42 +48,44 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="main-page">
         
         <section class="slider">
-             <div class="slider__item item-1">
-                <img src="./img/slide.jpg" alt="">
-                <div class="slider__title">
-                    <p>Wooder</p>
+            <div class="slider__item-slide">
+                <div class="slider__item">
+                    <img src="./img/slide.jpg" alt="">
+                    <div class="slider__item__text">
+                        <p>Wooder</p>
+                        <a href="" class="btn">
+                            LEARN MORE
+                        </a>
+                    </div>
+                </div> 
+                 <div class="slider__item">
+                    <img src="./img/slide2.jpg" alt="">
+                    <div class="slider__item__text">
+                        <p>Wooder</p>
+                        <a href="" class="btn">
+                            LEARN MORE
+                        </a>
+                    </div>
                 </div>
-                <div class="slider__btn">
-                    <button><p>LEARN MORE</p></button>
-                </div>
-            </div> 
-             <div class="slider__item item-2">
-                <img src="./img/slide2.jpg" alt="">
-                <div class="slider__title">
-                    <p>Wooder</p>
-                </div>
-                <div class="slider__btn">
-                    <button><p>LEARN MORE</p></button>
-                </div>
+                <div class="slider__item">
+                    <img src="./img/slide3.jpg" alt="">
+                    <div class="slider__item__text">
+                        <p>Wooder</p>
+                        <a href="" class="btn">
+                            LEARN MORE
+                        </a>
+                    </div>
+                </div> 
             </div>
-            <div class="slider__item item-3">
-                <img src="./img/slide3.jpg" alt="">
-                <div class="slider__title">
-                    <p>Wooder</p>
-                </div>
-                <div class="slider__btn">
-                    <button><p>LEARN MORE</p></button>
-                </div>
-            </div> 
 
              <div class="slider__footer">
                 <div class="container-fluid">
-                    <div class="paging">
+                    <div class="slider__footer-paging">
                         <div class="">--</div>
-                        <div class="paging__number"></div>
+                        <div class="paging__number">1</div>
                         <div class="paging__view">
                             <ul>
                                 <li></li>
@@ -81,11 +94,11 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="midicon">
-                        <div class="midicon__mouse"></div>
-                        <div class="midicon__arrow"></div>
+                    <div class="slider__footer-midicon">
+                        <div class="midicon__mouse">MOUSE</div>
+                        <div class="midicon__arrow">ARROW</div>
                     </div>
-                    <div class="switch">
+                    <div class="slider__footer-switch">
                         <div class="switch__btn --back">
                             <a href=""><--</a>
                         </div>
@@ -106,7 +119,7 @@
                         <a href="">LEARN MORE</a>
                     </div>
                     <div class="items__img">
-                        <img src="./img/furniture-011.jpg" alt="Furniture image">
+                        <img src="img/furniture-011.jpg" alt="Furniture image">
                     </div>
                 </div>
 
@@ -117,7 +130,7 @@
                         <a href="">LEARN MORE</a>
                     </div>
                     <div class="items__img">
-                        <img src="./img/img.jpg" alt="decor image">
+                        <img src="img/img.jpg" alt="decor image">
                     </div>
                 </div>
             </div>
@@ -131,23 +144,23 @@
                 </div>
                 <div class="videos__item-wrap">
                     <div class="videos__item">
-                        <img src="./img/GIBRALTAR-BENCH-IN-TABLES-COFFEE-AND-SEATING.jpg" alt="">
+                        <img src="img/GIBRALTAR-BENCH-IN-TABLES-COFFEE-AND-SEATING.jpg" alt="">
                         <div class="play_button">
-                            <img src="./img/play.png" alt="Play video">
+                            <img src="img/play.png" alt="Play video">
                         </div>
                         <p>Innovative Design</p>
                     </div>
                     <div class="videos__item">
-                        <img src="./img/wood-furniture-design.jpg" alt="">
+                        <img src="img/wood-furniture-design.jpg" alt="">
                         <div class="play_button">
-                            <img src="./img/play.png" alt="Play video">
+                            <img src="img/play.png" alt="Play video">
                         </div>
                         <p>Innovative Design</p>
                     </div>
                     <div class="videos__item">
-                        <img src="./img/upcycled-02.jpg" alt="">
+                        <img src="img/upcycled-02.jpg" alt="">
                         <div class="play_button">
-                            <img src="./img/play.png" alt="Play video">
+                            <img src="img/play.png" alt="Play video">
                         </div>
                         <p>Innovative Design</p>
                     </div>
@@ -157,7 +170,7 @@
 
         <section class="info">
             <div class="info__background">
-                <img src="./img/back-ground.jpg" alt="Infomation back ground">
+                <img src="img/back-ground.jpg" alt="Infomation back ground">
             </div>
             <div class="container">
                 <h2> </h2>
@@ -272,7 +285,7 @@
                     2016 WOODER, Demo by CFD
                 </div>
                 <div class="footer__logo">
-                    <img src="./img/Logo.png" alt="Web site logo">
+                    <img src="img/Logo.png" alt="Web site logo">
                 </div>
                 <div class="footer__backtotop">
                     <p>ICON</p>

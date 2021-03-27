@@ -3,12 +3,12 @@ $white-cl: #fff;
 $black-cl: #000;
 
 /*global text color*/
-$text-cl: #222;
+$text-cl: #010101;
 $text-black-cl: #000;
 
 /*global bg color*/
-$main-bg-cl: #000;
-$black-bg-cl: #000;
+$main-bg-cl: #fff;
+$black-bg-cl: #000; 
 
 // timing transition
 $t: 0.4s;
@@ -16,7 +16,7 @@ $cubic: cubic-bezier(0.84, 0.13, 0.33, 0.97);
 
 /*font families*/
 $font-stack: "Open Sans", sans-serif;
-$font-main: arial;
+$font-main: fmain;
 
 /*headings typo*/
 $fz-text: 16px;
@@ -25,11 +25,15 @@ $lh-text: normal;
 $fz-text-m: 16px;
 $lh-text-m: normal;
 
+/*add define*/
+$section-padding: 90px;
+
+
 //============================================================//
 
 /*BOXED LAYOUT*/
 $container-max-width: 1920px;
-$container-width: 1010px; // tùy thuộc vào container của bản thiết kế mà chỉnh sửa cho hợp lý
+$container-width: 1000px; // tùy thuộc vào container của bản thiết kế mà chỉnh sửa cho hợp lý
 
 /*GRID - media queries breakpoints*/
 $xxs-min: 576px; // CÓ THỂ TÙY CHỈNH
