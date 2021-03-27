@@ -84,7 +84,6 @@ main{
             justify-content: space-between;
             .items{
                 display: flex;
-                // margin-bottom: 100px;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 &:nth-child(even){
@@ -94,13 +93,33 @@ main{
                 &__description{
                     width: 45%;
                     text-align: center;
-                    // margin: auto;
                 }
                 &__img{
                     width: 55%;
                 }
             }
         }
+        @include sm{
+            .container{
+                justify-content: center;
+                .items{
+                    flex-direction: column;
+                    align-items: center;
+                    &:nth-child(even){
+                        flex-direction: column;
+                    }
+                    &__description{
+                        width: 100%;
+                        text-align: center;
+                    }
+                    &__img{
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+        }     
+        
     }
 
     .videos{
@@ -170,33 +189,6 @@ main{
         }
     }
 
-    .news{
-        // margin-top: 50px;
-        // margin-bottom: 50px;
-        .container{
-            display: flex;
-            flex-direction: column;
-        }
-        &__description{
-        }
-        &__list{
-            display: flex;
-            &-item{
-                padding: 10px;
-                display: flex;
-                flex-direction: column;
-                justify-content:space-around;
-                p{
-                    display: -webkit-box;
-                    -webkit-line-clamp: 3;
-                    -webkit-box-orient: vertical;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                }
-            }
-        }
-    }
-
     .about{
         // margin-top: 30px;
         // margin-bottom: 30px;
@@ -207,20 +199,21 @@ main{
     
     .gallery{
         background-color: #000;
-        padding-top: 90px;
-        padding-bottom: 90px;
-        color: #fff;
         .container {
             display: flex;
             flex-direction: column;
+            .gallery__text{
+                color: #fff;
+            }
             .gallery__grid{
                 display: grid;
                 grid-gap: 20px;
                 &-item{
+                    height: 200px;
+                    width: 300px;
+                    overflow: hidden;
                     position: relative;
                     overflow: hidden;
-                    height:100%;
-                    display:block;
                     cursor: pointer;
                     &.item1 {
                         grid-column: 1 / 2;
@@ -232,11 +225,8 @@ main{
                     }
                     &.item3 {
                         grid-column: 2 / 3;
-                        grid-row: 1 / 3;
-                        // height: 400px;
-                        // width: 100%;
-                        background-color: #fff;
-                        // margin:0;
+                        grid-row: 1/3;
+                        height: 100%;
                     }
                     &.item4 {
                         grid-column: 3 / 4;
@@ -247,18 +237,68 @@ main{
                         grid-row: 2;
                     }
 
-                }
-                img{
-                    object-fit:cover;
-                    // position: absolute; 
-                    width: 100%;
-                    height: 100%;
-                    left: 0;
-                
+                    >img{
+                        min-width: 100%;
+                        min-height: 100%;
+                        object-fit: cover;
+                        top: 50%;
+                        left: 50%;
+                        position: absolute;
+                        @include transform(translate(-50%, -50%));
+                    }
                 }
             }
         }
+        @include sm{
+
+        }
             
+    }
+
+    .news{
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        &__description{
+        }
+        &__list{
+            display: flex;
+            gap: 12px;
+            width:100%;
+            &-item{
+                // padding: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content:space-around;
+                p{
+                    @include overtext(3);
+                }
+            }
+        }
+        @include sm{
+            .container{
+                display: flex;
+                flex-direction: column;
+            }
+            &__description{
+            }
+            &__list{
+                display: flex;
+                gap: 12px;
+                width:100%;
+                flex-direction: column;
+                &-item{
+                    // padding: 10px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content:space-around;
+                    p{
+                        @include overtext(3);
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -274,3 +314,5 @@ footer{
         }
     }
 }
+
+
